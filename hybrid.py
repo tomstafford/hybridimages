@@ -21,7 +21,7 @@ import os # for joining paths and filenames sensibly
 
 #test which machine we are on and set working directory
 if 'tom' in socket.gethostname():
-    os.chdir('/home/tom/t.stafford@sheffield.ac.uk/A_UNIVERSITY/toys/hybrid/')
+    os.chdir('/home/tom/Desktop/hybridimages/')
 else:
     print("I don't know where I am! ")
     print("Maybe the script will run anyway...")
@@ -37,8 +37,8 @@ import matplotlib.pyplot as plt #plotting
 
 #import images as grayscale
 
-im1 = rgb2gray(imread('in/taylor900.jpg'))
-im2 = rgb2gray(imread('in/kanye.jpg'))
+im1 = rgb2gray(imread('in/tom_400x400.jpg'))
+im2 = rgb2gray(imread('in/skull.jpg'))
 #im1 = rgb2gray(imread('in/olaf.png'))
 #im2 = rgb2gray(imread('in/elsa.png'))
 #im1 = rgb2gray(imread('in/oname.png'))
