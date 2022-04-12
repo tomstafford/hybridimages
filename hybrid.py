@@ -54,7 +54,9 @@ if (im1.shape[0] != im2.shape[0]) & (im1.shape[1] != im2.shape[1]):
 
 
 im_low_freqs= gaussian_filter(im1, sigma=12) #(5,5,1) #high pass filter
-im_hig_freqs= 1 - (im2 - gaussian_filter(im2, sigma=5)) #(5,5,1) #get high pass filter by simply substracting low freqs
+#im_hig_freqs= 1 - (im2 - gaussian_filter(im2, sigma=5)) #(5,5,1) #get high pass filter by simply substracting low freqs
+im_hig_freqs= (im2 - gaussian_filter(im2, sigma=5)) #(5,5,1) #get high pass filter by simply substracting low freqs
+
 
 if showing:
     #displays in interactive console
